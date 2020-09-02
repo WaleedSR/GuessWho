@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenueController">
+   <children>
+      <Button fx:id="startButton" layoutX="200.0" layoutY="181.0" mnemonicParsing="false" onAction="#startGame" prefHeight="35.0" prefWidth="200.0" text="Start the game">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="helpButton" layoutX="200.0" layoutY="234.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Help">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="125.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/gameName.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@CSS/menue.css" />
+      <URL value="@CSS/buttons.css" />
+   </stylesheets>
+</Pane>

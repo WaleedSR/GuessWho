@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveControl" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Level_1Controller">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" x="15.0" y="45.0">
+         <image>
+            <Image url="@icon/Mark-Zuckerberg-Heels-Agency-Demi-Karan-3.jpg" />
+         </image></ImageView>
+      <Button fx:id="muteButton" layoutX="600.0" layoutY="505.0" mnemonicParsing="false" onAction="#mute" prefHeight="40.0" prefWidth="130.0" text="Mute" />
+      <ImageView fitHeight="58.0" fitWidth="164.0" layoutX="583.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lives" fitHeight="59.0" fitWidth="164.0" layoutX="583.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/lives_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="winOrLose" disable="true" fitHeight="129.0" fitWidth="164.0" layoutX="583.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="startAgain" disable="true" layoutX="600.0" layoutY="381.0" mnemonicParsing="false" onAction="#startAgain" prefHeight="40.0" prefWidth="130.0" text="Start again" />
+      <Button fx:id="nextLevel" disable="true" layoutX="600.0" layoutY="446.0" mnemonicParsing="false" onAction="#nextLevel" prefHeight="40.0" prefWidth="130.0" text="Next level" />
+   </children>
+   <stylesheets>
+      <URL value="@CSS/Controller.css" />
+      <URL value="@CSS/buttons.css" />
+   </stylesheets>
+</AnchorPane>

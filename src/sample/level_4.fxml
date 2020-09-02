@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#moveControl" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Level_4Controller">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" x="15.0" y="45.0">
+            <image>
+                <Image url="@icon/maxresdefault.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="muteButton" layoutX="604.0" layoutY="505.0" mnemonicParsing="false" onAction="#mute" prefHeight="40.0" prefWidth="130.0" text="Mute" />
+        <ImageView fitHeight="58.0" fitWidth="164.0" layoutX="587.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icon/level_4.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="lives" fitHeight="59.0" fitWidth="164.0" layoutX="587.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="winOrLose" disable="true" fitHeight="126.0" fitWidth="164.0" layoutX="587.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="startAgain" disable="true" layoutX="604.0" layoutY="397.0" mnemonicParsing="false" onAction="#startAgain" prefHeight="40.0" prefWidth="130.0" text="Start again" />
+    </children>
+   <stylesheets>
+      <URL value="@CSS/Controller.css" />
+      <URL value="@CSS/buttons.css" />
+   </stylesheets>
+</AnchorPane>

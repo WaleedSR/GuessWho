@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DifficultyController">
+   <children>
+      <Button fx:id="easy" layoutX="200.0" layoutY="183.0" mnemonicParsing="false" onAction="#setEasy" prefHeight="35.0" prefWidth="200.0" text="Easy" />
+      <Button fx:id="medium" layoutX="200.0" layoutY="237.0" mnemonicParsing="false" onAction="#setMedium" prefHeight="35.0" prefWidth="200.0" text="Medium" />
+      <Button fx:id="hard" layoutX="200.0" layoutY="289.0" mnemonicParsing="false" onAction="#setHard" prefHeight="35.0" prefWidth="200.0" text="Hard" />
+      <Button fx:id="back" layoutX="200.0" layoutY="347.0" mnemonicParsing="false" onAction="#getBack" prefHeight="35.0" prefWidth="200.0" text="Back" />
+      <ImageView fitHeight="200.0" fitWidth="350.0" layoutX="125.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/difficulties.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@CSS/menue.css" />
+      <URL value="@CSS/buttons.css" />
+   </stylesheets>
+</Pane>
